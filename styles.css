@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+--brightOrange: hsl(31, 77%, 52%);
+--darkCyan: hsl(184, 100%, 22%);
+--veryDarkCyan: hsl(179, 100%, 13%);
+--transparentWhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+--veryLightGray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1rem;
+}
+
+.card {
+    min-width: 600px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--lightGray);
+    border-radius: 0.5rem;
+}
+
+
+.content {
+    display: flex;
+    color: var(--transparentWhite-paragraphs);
+}
+
+.sedans {
+    background-color: var(--brightOrange);
+    padding: 1.5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.suv {
+    background-color: var(--veryDarkCyan);
+    padding: 1.5rem;
+}
+
+.luxury {
+    background-color: var(--darkCyan);
+    padding: 1.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+img {
+    padding-bottom: 1.5rem;
+}
+
+.heading {
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.description {
+    padding-bottom: 3rem;
+    font-family:'Big Shoulders Display', cursive;
+}
+
+button {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    border-radius: 5rem;
+    background-color: var(--veryLightGray-background-headings-buttons);
+    border: none;
+    cursor: pointer;
+}
+
+.sedans button {
+    color: var(--brightOrange);
+    
+}
+
+.suv button {
+    color: var(--veryDarkCyan);
+}
+
+.luxury button {
+    color: var(--darkCyan);
+}
+
+@media only screen and (max-width: 376px) {
+    .card {
+        min-width: 325px;
+        width: 50%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .sedans {
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury {
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0;
+    }
+
+    button {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+
